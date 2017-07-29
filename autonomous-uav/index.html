@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://louays.com/project/autonomous-uav/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class=" js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions supports"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Autonomous UAV - Louay Cheikh</title>
+
+				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+				<link rel="apple-touch-icon" href="http://louays.com/wp-content/themes/louays/library/images/apple-touch-icon.png">
+		<link rel="icon" href="http://louays.com/wp-content/themes/louays/favicon.png">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="http://louays.com/wp-content/themes/louays/favicon.ico">
+		<![endif]-->
+				<meta name="msapplication-TileColor" content="#333">
+		<meta name="msapplication-TileImage" content="http://louays.com/wp-content/themes/louays/library/images/win8-tile-icon.png">
+            <meta name="theme-color" content="#121212">
+
+		<link rel="pingback" href="http://louays.com/xmlrpc.php">
+
+				
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://louays.com/project/autonomous-uav/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Autonomous UAV - Louay Cheikh">
+<meta property="og:description" content="Tandem Wing Autonomous UAV">
+<meta property="og:url" content="http://louays.com/project/autonomous-uav/">
+<meta property="og:site_name" content="Louay Cheikh">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="Fully Autonomous">
+<meta property="article:tag" content="Hermite Interpolation">
+<meta property="article:tag" content="Richard Cheng Design Award">
+<meta property="article:tag" content="Selig 1223">
+<meta property="article:tag" content="Tandem Wings">
+<meta property="og:image" content="http://louays.com/wp-content/uploads/2015/12/capstone.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Tandem Wing Autonomous UAV">
+<meta name="twitter:title" content="Autonomous UAV - Louay Cheikh">
+<meta name="twitter:image" content="http://louays.com/wp-content/uploads/2015/12/capstone.jpg">
+<!-- / Yoast SEO plugin. -->
+
+		<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WTXBGJC"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/louays.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./index_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="siteorigin-panels-front-css" href="./index_files/front.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./index_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="ionicons-css" href="./index_files/ionicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="googleFonts-css" href="./index_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="bones-stylesheet-css" href="./index_files/style.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='bones-ie-only-css'  href='http://louays.com/wp-content/themes/louays/library/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="./index_files/jquery.js"></script><style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle
+{ display: none !important; }</style>
+<script type="text/javascript" src="./index_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./index_files/modernizr.custom.min.js"></script>
+<link rel="https://api.w.org/" href="http://louays.com/wp-json/">
+<link rel="alternate" type="application/json+oembed" href="http://louays.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flouays.com%2Fproject%2Fautonomous-uav%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://louays.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Flouays.com%2Fproject%2Fautonomous-uav%2F&amp;format=xml">
+		
+		    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WTXBGJC');</script>
+    <!-- End Google Tag Manager -->
+		
+	</head><style id="stylish-1" class="stylish" type="text/css">@namespace url(http://www.w3.org/1999/xhtml);
+
+
+
+/*[theme_drive]*/</style>
+
+	<body class="single single-project postid-30" itemscope="" itemtype="http://schema.org/WebPage" cz-shortcut-listen="true">
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTXBGJC"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+     <noscript style="display:none">
+       &lt;style&gt;
+         #wrapper,
+         header {
+           top: 0;
+         }
+         #loader {
+           display: none;
+         }
+         #wrapper,
+         body {
+           background-color: #ebebeb;
+         }
+       &lt;/style&gt;
+     </noscript>
+
+     <input type="checkbox" id="open-menu" name="open-menu" autocomplete="off">
+
+      <header class="header" role="banner" itemscope="" itemtype="http://schema.org/WPHeader" style="top: 0px;">
+
+          <div id="inner-header" class="inner-header cf" style="position: relative">
+
+                               
+                                
+                  <h1><a href="http://louays.com/"><i class="ion-arrow-left-b"></i> Back</a></h1>
+                
+                
+          </div>
+
+      </header>
+
+
+        <div role="navigation" class="primary-nav">
+  <nav class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="http://louays.com/project/autonomous-uav/#home">#Home</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="http://louays.com/project/autonomous-uav/#projects">#Projects</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="http://louays.com/project/autonomous-uav/#about">#About</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://louays.com/project/autonomous-uav/#contact">#Contact</a></li>
+</ul></nav>  </div>
+
+
+      
+
+      <div id="wrapper" class="" style="top: 0px;">
+
+
+        <!-- Main Start-->
+
+			<div id="content">
+
+				<div id="inner-content" class="cf">
+
+						
+							
+<div class="article-header entry-header">
+
+  <h1 class="entry-title single-title" itemprop="headline" rel="bookmark">Autonomous UAV</h1>
+  
+  <h2 class="entry-subtitle"><p>Tandem Wing Autonomous UAV</p>
+</h2>
+
+</div> 
+<div class="entry-content cf" itemprop="articleBody">
+
+  <img width="1362" height="591" src="./index_files/capstone.jpg" class="attachment-full size-full wp-post-image" alt="capstone" srcset="http://louays.com/wp-content/uploads/2015/12/capstone-300x130.jpg 300w, http://louays.com/wp-content/uploads/2015/12/capstone-768x333.jpg 768w, http://louays.com/wp-content/uploads/2015/12/capstone-1024x444.jpg 1024w, http://louays.com/wp-content/uploads/2015/12/capstone.jpg 1362w" sizes="(max-width: 1362px) 100vw, 1362px">
+
+  <div class="features">
+
+    <h1>Features</h1>
+
+    <div class="feature-tile-wrapper wrap cf">
+
+                    
+      <div class="tile" style="background-color: #639b7c">
+        <div class="front" style="background-image: url(&#39;http://louays.com/wp-content/uploads/2015/12/cpp.png&#39;)"></div>
+        <div class="back">
+          <h2>C++</h2>
+        </div>
+      </div>
+
+                
+      <div class="tile" style="background-color: #b2607c">
+        <div class="front" style="background-image: url(&#39;http://louays.com/wp-content/uploads/2015/12/auto.png&#39;)"></div>
+        <div class="back">
+          <h2>Fully Autonomous</h2>
+        </div>
+      </div>
+
+                
+      <div class="tile" style="background-color: #95a5a6">
+        <div class="front" style="background-image: url(&#39;http://louays.com/wp-content/uploads/2015/12/Hermite.png&#39;)"></div>
+        <div class="back">
+          <h2>Hermite Interpolation</h2>
+        </div>
+      </div>
+
+                
+      <div class="tile" style="background-color: #713ea6">
+        <div class="front" style="background-image: url(&#39;http://louays.com/wp-content/uploads/2015/12/rcda.png&#39;)"></div>
+        <div class="back">
+          <h2>Richard Cheng Design Award</h2>
+        </div>
+      </div>
+
+                
+      <div class="tile" style="background-color: #8eb67c">
+        <div class="front" style="background-image: url(&#39;http://louays.com/wp-content/uploads/2015/12/selig.png&#39;)"></div>
+        <div class="back">
+          <h2>Selig 1223</h2>
+        </div>
+      </div>
+
+                
+      <div class="tile" style="background-color: #713ea6">
+        <div class="front" style="background-image: url(&#39;http://louays.com/wp-content/uploads/2015/12/tandem.png&#39;)"></div>
+        <div class="back">
+          <h2>Tandem Wings</h2>
+        </div>
+      </div>
+
+    
+	
+    <div class="tile" style="background-color: #333">
+      <div class="front">
+        <a href="http://youtu.be/YVHRGaPxaqo"><i class="ion ion-link"></i></a>
+      </div>
+      <div class="back">
+		<h2>Link</h2>
+      </div>
+    </div>
+    
+    
+    </div>
+    
+ </div>
+  
+  </div> 
+<div class="article-footer">
+
+</div> 
+
+
+						
+						
+				</div>
+
+			</div>
+
+		    <!-- Main End-->
+
+
+
+			<footer class="footer" role="contentinfo" itemscope="" itemtype="http://schema.org/WPFooter">
+
+
+
+				<div id="inner-footer" class="wrap cf">
+
+
+
+					<p class="source-org copyright">© 2017 Louay Cheikh.
+
+					Some images from <a href="http://www.freepik.com/">Freepik</a></p>
+
+
+
+				</div>
+
+
+
+			</footer>
+
+
+
+        </div> <!--End Wrapper-->
+
+		
+		<script type="text/javascript" src="./index_files/jquery.form.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/louays.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/scripts.js"></script>
+<script type="text/javascript" src="./index_files/velocity.min.js"></script>
+<script type="text/javascript" src="./index_files/velocity.ui.min.js"></script>
+<script type="text/javascript" src="./index_files/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="./index_files/snap.svg-min.js"></script>
+<script type="text/javascript" src="./index_files/scripts(1).js"></script>
+<script type="text/javascript" src="./index_files/wp-embed.min.js"></script>
+
+
+
+<!-- <script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-59227400-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+ -->
+
+
+	
+
+
+
+ <!-- end of site. what a ride! --></body></html>
