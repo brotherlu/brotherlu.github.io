@@ -1005,7 +1005,7 @@ section {
   top: 0; }
 
 #home {
-  background: url("../images/home.jpg") #333 no-repeat center right;
+  background: url("/images/home.jpg") #333 no-repeat center right;
   background-size: cover;
   min-height: 100%; }
   #home .home-text {
